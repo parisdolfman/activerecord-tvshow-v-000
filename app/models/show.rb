@@ -4,4 +4,11 @@ class Show < ActiveRecord::Base
     Show.maximum(:rating)
   end
 
+  def Show::most_popular_show 
+    show = Show.maximum(:rating)
+    show.each do |att| 
+      att[:name]
+    end 
+  end 
+
 end
