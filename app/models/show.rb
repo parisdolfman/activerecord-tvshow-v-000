@@ -5,11 +5,7 @@ class Show < ActiveRecord::Base
   end
 
   def Show::most_popular_show
-    show = Show.maximum(:rating)
-    show.each do |att|
-      att[:name]
-      binding.pry
-    end
+    Show.where("rating = ?", :rating).first
   end
 
 end
