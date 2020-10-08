@@ -8,6 +8,7 @@ class Show < ActiveRecord::Base
     show = Show.maximum(:rating)
     show.each do |att|
       att[:name]
+      binding.pry
     end
   end
 
