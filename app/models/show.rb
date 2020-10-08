@@ -16,4 +16,8 @@ class Show < ActiveRecord::Base
     Show.where("rating = ?", Show.minimum(:rating)).first
   end
 
+  def Show::ratings_sum 
+    Show.sum(:rating)
+  end 
+
 end
