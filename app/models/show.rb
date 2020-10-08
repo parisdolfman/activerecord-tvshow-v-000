@@ -1,5 +1,5 @@
 class Show < ActiveRecord::Base
 
-  def 
-  
+  def
+
 end
